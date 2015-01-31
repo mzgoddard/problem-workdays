@@ -1,0 +1,22 @@
+{
+  "name": "workdays",
+  "version": "0.0.0",
+  "private": true,
+  "description": "Get a date the number of workdays after an initial date.",
+  "main": "index.js",
+  "directories": {
+    "test": "test"
+  },
+  "scripts": {
+    "test": "testem ci"
+  },
+  "author": "Michael \"Z\" Goddard <mzgoddard@gmail.com>",
+  "license": "MIT",
+  "devDependencies": {
+    "chai": "^1.10.0",
+    "forever": "^0.13.0",
+    "mocha": "^2.1.0",
+    "testem": "^0.6.34",
+    "webpack": "^1.5.3"
+  }
+}
