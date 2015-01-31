@@ -11,8 +11,8 @@ module.exports = function(start, increment) {
 
   // If increment is greater than or less than 0 and day of week is a
   // weekend, start with a buffer.
-  if (day === 0 && sign !== 0) {
-    days = 0;
+  if (day === 0 && sign === -1) {
+    days = 1;
   } else if (day === 6 && sign === 1) {
     days = 1;
   }
