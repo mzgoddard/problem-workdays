@@ -1,6 +1,6 @@
 {
   "name": "workdays",
-  "version": "0.1.0",
+  "version": "0.1.1",
   "private": true,
   "description": "Get a date the number of workdays after an initial date.",
   "main": "index.js",
