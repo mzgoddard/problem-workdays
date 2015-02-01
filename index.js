@@ -11,16 +11,16 @@ module.exports = function(start, increment) {
 
   // If increment is greater than or less than 0 and day of week is a
   // weekend, start with a buffer.
-  if (day === 0 && sign !== 0) {
+  if (day === 0 && sign === -1) {
     days = 1;
   } else if (day === 6 && sign === 1) {
-    days = 2;
+    days = 1;
   }
 
   // Add padding for weekends.
   var paddedAbsIncrement = absIncrement;
   if (day !== 0 && day !== 6 && sign > 0) {
-    paddedAbsIncrement += day - 1;
+    paddedAbsIncrement += day;
   } else if (day !== 0 && day !== 6 && sign < 0) {
     paddedAbsIncrement += 6 - day;
   }
